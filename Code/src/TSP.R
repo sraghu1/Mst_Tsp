@@ -1,0 +1,5 @@
+library(TSP)
+data<-read.csv("D:/node_10.tsv",sep = "\t")
+d<-dist(data)
+tsp<-TSP(d)
+tour <- solve_TSP(tsp, method = "2-opt")
